@@ -1,5 +1,5 @@
 import { Pool, PoolClient } from "pg";
-import { Receipt, ReceiptInput, makeReceipt } from "./receipts";
+import { Receipt, ReceiptInput, hashReceipt, makeReceipt } from "./receipts";
 
 declare global {
   // eslint-disable-next-line no-var
@@ -42,7 +42,6 @@ function demoReceipt(
   input:ReceiptInput
 ): Receipt {
   const base = { ...input, id, sequence, previous_hash, created_at };
-  const { hashReceipt } = require("./receipts") as typeof import("./receipts");
   return { ...base, hash: hashReceipt(base), demo:true };
 }
 
