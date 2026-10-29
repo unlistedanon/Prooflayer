@@ -1,4 +1,5 @@
 import { Pool, PoolClient } from "pg";
+import { databaseConfig } from "./database-config";
 import { Receipt, ReceiptInput, hashReceipt, makeReceipt } from "./receipts";
 
 declare global {
@@ -13,7 +14,7 @@ globalThis.proofLayerMemory = memory;
 
 const databaseUrl = process.env.DATABASE_URL;
 const pool = databaseUrl
-  ? (globalThis.proofLayerPool ?? new Pool({ connectionString: databaseUrl, ssl: databaseUrl.includes("localhost") ? undefined : { rejectUnauthorized: false } }))
+  ? (globalThis.proofLayerPool ?? new Pool(databaseConfig(databaseUrl)))
   : null;
 if (pool) globalThis.proofLayerPool = pool;
 
