@@ -45,3 +45,15 @@ Read [ARCHITECTURE.md](./ARCHITECTURE.md) for the threat model and explicit non-
 ## Product rule
 
 Usage before architecture. The next feature is earned by external users, not by our ability to imagine it.
+
+
+### Database TLS
+
+Remote PostgreSQL connections use TLS with certificate verification enabled.
+Only exact localhost, 127.0.0.1 and ::1 hosts use plaintext local connections.
+Set `DATABASE_TLS_CA` to a PEM CA certificate for a private certificate authority.
+URL TLS parameters are removed before creating the pool so they cannot silently
+override verification; configure TLS through these environment settings instead.
+Client-certificate authentication via URL parameters is not supported.
+`DATABASE_TLS_INSECURE=true` is an explicit temporary opt-out for development;
+it disables server authentication and must not be used for production.
