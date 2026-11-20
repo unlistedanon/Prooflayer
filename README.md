@@ -1,9 +1,14 @@
 # ProofLayer
 
-> **1337 GANG OPEN SOURCE:** [Free MIT-licensed release and setup guide](1337_GANG_RELEASE.md) · [1337 Gang catalog](https://github.com/unlistedanon/degen-bot-lab/blob/release/1337-gang-2026-11-19/1337_GANG_INDEX.md). Development tool: hash-chain verification does not prove actions happened, and write APIs require hardening before public exposure.
+![ProofLayer — 1337 Gang developer tools](assets/prooflayer-github-cover.svg)
 
+**Your agent says it did something. Verify what was recorded.**
 
-**Your agent says it did something. Prove what was recorded.**
+[**Run it locally**](1337_GANG_RELEASE.md#start-locally) · [**Read the verification limits**](#verification-boundary) · [**Explore 1337 Gang**](https://github.com/unlistedanon/degen-bot-lab/blob/release/1337-gang-2026-11-19/1337_GANG_INDEX.md) · [**Security gate**](RELEASE_SECURITY_GATE.md)
+
+> **MIT-licensed on this release branch · Developer/demo foundation, not a hardened public ingestion API.** Checksums and linked receipts can check the consistency of retained records; they do **not** establish that an underlying action happened. Do not expose unauthenticated write endpoints publicly.
+
+---
 
 ProofLayer is a small developer tool for tamper-evident AI-agent activity receipts.
 
