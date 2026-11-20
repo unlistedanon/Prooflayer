@@ -1,5 +1,8 @@
 # ProofLayer
 
+> **1337 GANG OPEN SOURCE:** [Free MIT-licensed release and setup guide](1337_GANG_RELEASE.md). Development tool: hash-chain verification does not prove actions happened, and write APIs require hardening before public exposure.
+
+
 **Your agent says it did something. Prove what was recorded.**
 
 ProofLayer is a small developer tool for tamper-evident AI-agent activity receipts.
