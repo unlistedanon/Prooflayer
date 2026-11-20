@@ -1,6 +1,14 @@
 # ProofLayer
 
-**Your agent says it did something. Prove what was recorded.**
+![ProofLayer — 1337 Gang developer tools](assets/prooflayer-github-cover.svg)
+
+**Your agent says it did something. Verify what was recorded.**
+
+[**Run it locally**](1337_GANG_RELEASE.md#start-locally) · [**Read the verification limits**](#verification-boundary) · [**Explore 1337 Gang**](https://github.com/unlistedanon/degen-bot-lab/blob/release/1337-gang-2026-11-19/1337_GANG_INDEX.md) · [**Security gate**](RELEASE_SECURITY_GATE.md)
+
+> **MIT-licensed on this release branch · Developer/demo foundation, not a hardened public ingestion API.** Checksums and linked receipts can check the consistency of retained records; they do **not** establish that an underlying action happened. Do not expose unauthenticated write endpoints publicly.
+
+---
 
 ProofLayer is a small developer tool for tamper-evident AI-agent activity receipts.
 
@@ -45,3 +53,15 @@ Read [ARCHITECTURE.md](./ARCHITECTURE.md) for the threat model and explicit non-
 ## Product rule
 
 Usage before architecture. The next feature is earned by external users, not by our ability to imagine it.
+
+
+### Database TLS
+
+Remote PostgreSQL connections use TLS with certificate verification enabled.
+Only exact localhost, 127.0.0.1 and ::1 hosts use plaintext local connections.
+Set `DATABASE_TLS_CA` to a PEM CA certificate for a private certificate authority.
+URL TLS parameters are removed before creating the pool so they cannot silently
+override verification; configure TLS through these environment settings instead.
+Client-certificate authentication via URL parameters is not supported.
+`DATABASE_TLS_INSECURE=true` is an explicit temporary opt-out for development;
+it disables server authentication and must not be used for production.
