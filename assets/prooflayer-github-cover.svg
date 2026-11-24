@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-label="ProofLayer developer tool cover: integrity receipts for recorded AI agent activity">
+<defs>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080c1b"/><stop offset=".58" stop-color="#181331"/><stop offset="1" stop-color="#070f21"/></linearGradient>
+<linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6be4ff"/><stop offset=".6" stop-color="#9d78ff"/><stop offset="1" stop-color="#f55ac3"/></linearGradient>
+<pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#34405d" stroke-width="1" opacity=".5"/></pattern>
+</defs>
+<rect width="1280" height="480" fill="url(#b)"/><rect width="1280" height="480" fill="url(#g)" opacity=".55"/>
+<path d="M40 35H1240" stroke="url(#stroke)" stroke-width="3"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="64" y="101" fill="#7ee7ff" font-size="17" font-weight="700" letter-spacing="5">1337 GANG / DEVELOPER TOOLS</text>
+<text x="58" y="215" fill="#fff" font-size="86" font-weight="900" letter-spacing="-3">ProofLayer</text>
+<text x="63" y="266" fill="#c6c6ee" font-size="28" font-weight="500">Activity receipts for AI agents.</text>
+<text x="64" y="312" fill="#a3b1d6" font-size="21">Record claims. Check hashes. Inspect history.</text>
+<rect x="64" y="353" width="290" height="49" rx="12" fill="#15303e" stroke="#65dff5"/>
+<text x="86" y="385" fill="#76ebfc" font-size="18" font-weight="700">OPEN SOURCE · v0.1</text>
+<text x="65" y="453" fill="#8c9dbb" font-size="16" letter-spacing="1">INTEGRITY CHECKS ARE NOT INDEPENDENT PROOF OF AN ACTION</text>
+<rect x="748" y="82" width="436" height="310" rx="22" fill="#141831" stroke="#7e66ee" stroke-width="2"/>
+<text x="784" y="124" fill="#a5b5d5" font-size="15" letter-spacing="3">RECORDED ACTIVITY</text>
+<g fill="none" stroke="#a47eff" stroke-width="3"><path d="M828 175v137"/><path d="M820 190h20M820 248h20M820 308h20"/></g>
+<g fill="#10172c" stroke="#58ddea" stroke-width="2"><circle cx="829" cy="188" r="12"/><circle cx="829" cy="248" r="12"/><circle cx="829" cy="307" r="12"/></g>
+<text x="867" y="192" fill="#f2f5ff" font-size="22" font-weight="700">Receipt #001</text>
+<text x="867" y="219" fill="#8ca3ca" font-size="15">SHA-256  /  verified hash</text>
+<text x="867" y="252" fill="#f2f5ff" font-size="22" font-weight="700">Receipt #002</text>
+<text x="867" y="279" fill="#8ca3ca" font-size="15">Previous hash linked</text>
+<text x="867" y="312" fill="#f2f5ff" font-size="22" font-weight="700">Receipt #003</text>
+<text x="867" y="339" fill="#8ca3ca" font-size="15">Chain check  /  recorded</text>
+<path d="M745 413H1185" stroke="#485776" stroke-width="1"/>
+<text x="756" y="439" fill="#8cb2d5" font-size="16" letter-spacing="2">LOCAL DEMO FIRST  ·  REVIEW BEFORE DEPLOYING</text>
+</g></svg>
